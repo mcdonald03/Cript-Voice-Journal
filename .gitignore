@@ -32,9 +32,16 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
+
+# Supabase local CLI state (project ref, linked-project.json)
+supabase/.temp/
+supabase/.branches/
 
 # generated native folders
 /ios
